@@ -1,0 +1,163 @@
+<!doctype>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet">
+    <script crossorigin="anonymous" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title id="titre_du_site">Site de test</title>
+    <meta http-equiv="content-type" content="text/html"/>
+    <meta name="robots" content="none"/>
+    <meta name="author" content="Cyriel GHENDRIH-FEILLANT"/>
+    <meta name="keyword" content="sea,sea,webmarketing,developpement, etc"/>
+    <link rel="cannonical" href="www.myself.com"/>
+    <h1>Site d'exemple en html pour le cours Nallis.fr</h1>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "http://www.localhost.com"
+            },
+            "headline": "Rédaction d'un site de test pour optimisation SEO dans les SERPS",
+            "image": "",
+            "author": {
+                "@type": "Person",
+                "name": "CYRIEL GHENDIH-FEILLANT"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "CYRIEL GHENDIH-FEILLANT",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "",
+                    "width": ,
+                    "height":
+                }
+            },
+            "datePublished": "2020-01-09",
+            "dateModified": "2020-01-09"
+        }
+    </script>
+</head>
+<style>
+    h1{
+        text-align: center;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    h2{
+        text-align: center;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    p{
+        text-align: justify;
+        font-style: italic;
+    }
+    body {
+        width : 100%;
+        height: 100%;
+    }
+    .navbar{
+        margin-bottom: 100px;
+    }
+</style>
+<body>
+<div id="chargementsite" >
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Site d'exemple</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" onclick="afficherlesliens()" href="#" >Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" onclick="afficherlesliens()">Afficher les liens</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" onclick="cacherlesliens()">Cacher les liens</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Tout cacher<span class="badge badge-secondary">Disabled</span></a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <p id="welcometext">Bienvenue sur le site de présentation du SEO pour les nuls. L'objectif de ce site est avant tout de tester et perfectionner les techniques de seo (White hat only).
+                Sont abordés dans ce cours toutes les techniques SEO, anciennes ou nouvelles permettant d'optimiser la place d'un site dans les SERPS. Le SEO est aujourd'hui un facteur économique important qui ne doit pas être mis de côté.
+                Optimiser son référencement c'est s'assurer d'une meilleure visibilité et d'une activité économique plus importante.</p>
+            <div class="col-sm">
+                <div class="card" id="card" style="width: 18rem;" >
+                    <img src="https://nallis.fr/images/showcase_bg.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Olivier Nallis</h5>
+                        <p class="card-text">Formation, conseil et création</p>
+                        <a href="https://nallis.fr/" class="btn btn-primary">Visiter le site</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" id="card2" style="width: 18rem;" >
+                    <img src="https://d4kkpd69xt9l7.cloudfront.net/sys-master/images/h6f/h2b/9311109808158/HH-True-Wireless-B-950x580-desktop.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Razer</h5>
+                        <p class="card-text">Ecouteurs gaming</p>
+                        <a href="https://www.razer.com/fr-fr/gaming-audio/razer-hammerhead-true-wireless-earbuds" class="btn btn-primary">Visiter le site</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" id="card3" style="width: 18rem;" >
+                    <img src="https://nallis.fr/images/showcase_bg.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Olivier Nallis</h5>
+                        <p class="card-text">Formation, conseil et création</p>
+                        <a href="https://nallis.fr/" class="btn btn-primary">Visiter le site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    window.onload = chargement();
+    function chargement(){
+        $('#card').hide();
+        $('#card2').hide();
+        $('#card3').hide();
+
+    }
+    function afficherlesliens() {
+        $('#cardedisplay').html('Voici les différents sites');
+        $('#welcometext').hide();
+        $('#card').show();
+        $('#card2').show();
+        $('#card3').show();
+    }
+    function cacherlesliens(){
+        $('#welcometext').show();
+        $('#card').hide();
+        $('#card2').hide();
+        $('#card3').hide();
+    }
+
+</script>
+</html>
